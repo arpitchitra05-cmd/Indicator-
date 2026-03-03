@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Trading Indicator</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0b0f19;
+color:#ffffff;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+section{
+padding:60px 0;
+}
+
+h1,h2,h3{
+margin-bottom:15px;
+}
+
+p{
+color:#c7c7c7;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#00c853;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+margin-top:15px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#00e676;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(180deg,#0b0f19,#121a2e);
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+margin-top:15px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.feature-card{
+background:#141b2d;
+padding:25px;
+border-radius:10px;
+border:1px solid #1f2a44;
+}
+
+.video{
+margin-top:30px;
+position:relative;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:10px;
+}
+
+.video iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+.pricing{
+text-align:center;
+background:#121a2e;
+border-radius:10px;
+padding:40px;
+border:1px solid #1f2a44;
+}
+
+.price{
+font-size:40px;
+color:#00e676;
+margin:15px 0;
+}
+
+.code-box{
+background:#141b2d;
+padding:25px;
+border-radius:10px;
+border:1px solid #1f2a44;
+margin-top:20px;
+position:relative;
+}
+
+.blur{
+filter:blur(6px);
+user-select:none;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-top:20px;
+}
+
+.contact input,.contact textarea{
+padding:10px;
+border:none;
+border-radius:5px;
+background:#141b2d;
+color:white;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#888;
+border-top:1px solid #1f2a44;
+}
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+<div class="container">
+<h1>Smart Trader Pro Indicator</h1>
+<p>A powerful TradingView indicator designed to help traders identify strong buy and sell signals with better accuracy.</p>
+<a href="#" class="btn">Buy Indicator – ₹175</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section>
+<div class="container">
+<h2>About The Indicator</h2>
+<p>
+This TradingView indicator is designed for traders who want clear market signals and better decision making.
+It analyzes price action, trend strength, and momentum to help traders identify high probability trade setups.
+Whether you are a beginner or experienced trader, this tool simplifies market analysis and improves trading confidence.
+</p>
+</div>
+</section>
+
+<!-- FEATURES -->
+
+<section>
+<div class="container">
+<h2>Features</h2>
+
+<div class="features">
+
+<div class="feature-card">
+<h3>Buy & Sell Signals</h3>
+<p>Get clear buy and sell signals directly on the chart.</p>
+</div>
+
+<div class="feature-card">
+<h3>Works on Any Market</h3>
+<p>Compatible with stocks, crypto, forex, and indices.</p>
+</div>
+
+<div class="feature-card">
+<h3>TradingView Compatible</h3>
+<p>Simple installation and fully optimized for TradingView charts.</p>
+</div>
+
+<div class="feature-card">
+<h3>Beginner Friendly</h3>
+<p>Clean signals that are easy to understand even for new traders.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- DEMO -->
+
+<section>
+<div class="container">
+<h2>Indicator Demo</h2>
+
+<div class="video">
+<iframe src="PASTE_YOUTUBE_DEMO_VIDEO_LINK_HERE"
+title="Indicator Demo"
+frameborder="0"
+allowfullscreen></iframe>
+</div>
+
+</div>
+</section>
+
+<!-- SETUP GUIDE -->
+
+<section>
+<div class="container">
+<h2>How To Install in TradingView</h2>
+
+<div class="video">
+<iframe src="PASTE_SETUP_TUTORIAL_YOUTUBE_LINK_HERE"
+title="Setup Guide"
+frameborder="0"
+allowfullscreen></iframe>
+</div>
+
+</div>
+</section>
+
+<!-- PRICING -->
+
+<section>
+<div class="container">
+
+<div class="pricing">
+<h2>Pricing</h2>
+<p>One time payment to unlock the indicator code</p>
+
+<div class="price">₹175</div>
+
+<a href="#" class="btn">Unlock Code / Buy Now</a>
+
+<p style="margin-top:10px;font-size:14px;">(Connect this button to Razorpay / UPI / Gumroad)</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- LOCKED CODE -->
+
+<section>
+<div class="container">
+
+<h2>Indicator Code (Locked)</h2>
+
+<div class="code-box">
+
+<pre class="blur">
+
+// TradingView Pine Script Indicator
+// Locked version preview
+
+//@version=5
+indicator("Smart Trader Pro", overlay=true)
+
+fast = ta.ema(close,9)
+slow = ta.ema(close,21)
+
+buy = ta.crossover(fast,slow)
+sell = ta.crossunder(fast,slow)
+
+plotshape(buy)
+plotshape(sell)
+
+// Full code available after purchase
+
+</pre>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+<div class="container">
+
+<h2>Contact Support</h2>
+
+<p>If you face any issue after purchase, contact us below.</p>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button class="btn">Send Message</button>
+
+</form>
+
+<p style="margin-top:15px;">Email: your@email.com</p>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Smart Trader Indicator. All Rights Reserved.</p>
+</footer>
+
+</body>
+  </html>
